@@ -11,30 +11,30 @@
       "ServicePrincipals": {
         "DeploymentSP": {
           "Enable": true,
-          "Name": "AdsGFDeploySP",
+          "Name": "ADS-Demp_SP",
           "ApplyNamePostFix": true
         },
         "WebAppAuthenticationSP": {
           "Enable": true,
-          "Name": "AdsGFWebAuthSP",
+          "Name": "MS-ADSGoFast-AWA-SP",
           "ApplyNamePostFix": true,
-          "ClientId": "ae896824-22f1-4f15-9985-17aa1735bb47"
+          "ClientId": "1ad12212-56cd-42c6-b111-596e5c3162e9"
         },
         "FunctionAppAuthenticationSP": {
           "Enable": true,
-          "Name": "AdsGFFuncAppAuthSP",
+          "Name": "MS-ADSGoFast-AF-SP",
           "ApplyNamePostFix": true,
-          "ClientId": "17c6e333-54e7-425d-8880-a23870109cf0"
+          "ClientId": "b34d06f1-9afe-40c5-abe7-636b95f49e23"
         }
       },
       "ResourceGroup": {
         "Enable": true,
-        "Subscription": "Jorampon Internal Consumption",
-        "Domain": "microsoft.com",
-        "TenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "Subscription": "Lundall-Insight-2021",
+        "Domain": "InsightOnline.onmicrosoft.com",
+        "TenantId": "6c637512-c417-4e78-9d62-b61258e4b619",
         "Location": "australiaeast",
         "Name": "AdsTest",
-        "AADUser": "jorampon@microsoft.com",
+        "AADUser": "stephen.lundall@insight.com",
         "ServicePrincipal_Deployment": "AdsGoFastDeploymentSP",
         "ServicePrincipalNameAFDownstream": "AdsGoFastDeployTestSP",
         "ServicePrincipalNameWebAuth": "adsgofastwebappauth",
