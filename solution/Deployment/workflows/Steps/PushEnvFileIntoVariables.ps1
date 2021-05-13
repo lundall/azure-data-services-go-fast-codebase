@@ -5,7 +5,7 @@ function SetServiceName($RootElement)
     $Value = [Environment]::GetEnvironmentVariable(($RootElement + "_Name"))
     if ($PostFixHash -eq "True")
     {
-        $Value = $Value +  $env:AdsOpts_CD_ResourceGroup_Hash
+        $Value = $Value #+  $env:AdsOpts_CD_ResourceGroup_Hash
     }
     PersistEnvVariable -Name ($RootElement + "_Name") -Value $Value
 }
@@ -85,6 +85,5 @@ function ParseSecretsFile ($SecretFile)
 
     $Json = Get-Content -Path "..\bin\Secrets.json"  | ConvertFrom-Json
     ParseEnvFragment -Json $Json -NamePrefix "secrets"
-    
 
 }

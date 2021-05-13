@@ -10,18 +10,18 @@
       "Enable": true,
       "ServicePrincipals": {
         "DeploymentSP": {
-          "Enable": true,
+          "Enable": false,
           "Name": "ADS-Demp_SP",
           "ApplyNamePostFix": true
         },
         "WebAppAuthenticationSP": {
-          "Enable": true,
+          "Enable": false,
           "Name": "MS-ADSGoFast-AWA-SP",
           "ApplyNamePostFix": true,
           "ClientId": "1ad12212-56cd-42c6-b111-596e5c3162e9"
         },
         "FunctionAppAuthenticationSP": {
-          "Enable": true,
+          "Enable": false,
           "Name": "MS-ADSGoFast-AF-SP",
           "ApplyNamePostFix": true,
           "ClientId": "b34d06f1-9afe-40c5-abe7-636b95f49e23"
@@ -69,7 +69,7 @@
         },
         "AzureSQLServer": {
           "Enable": true,
-          "Name": "adsgfazsql",
+          "Name": "adsgfazsqlinsight",
           "ApplyNamePostFix": true,
           "AdminUser": "AdsAdmin",
           "AdminPassword": "EPuiX2K0^T4t",
